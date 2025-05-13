@@ -1,0 +1,12 @@
+- [homepage](/)
+- instalation 
+  - [install with pip](/I_installwithpip.md)
+  - [install with zip](/I_installwithzip.md)
+  - [install with github](/I_installwithgithub.md)
+  - [install with tar.gz](/I_installwithtar.gz.md)
+- verification
+  - [Verifying SHA-512](/_v_shaverif.md)
+  - [Verify GPG Signature](/_v_gpgVerif.md)
+- [usage](/_usage.md)
+- [changelog](/CHANGELOG.md)
+- [warehouse of questions](/__warehouseofquestions.md)

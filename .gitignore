@@ -1,0 +1,5 @@
+.vscode
+.snapshots
+example/
+pnexcel-plugin.code-workspace
+dist
