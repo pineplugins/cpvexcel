@@ -1,3 +1,28 @@
+Metadata-Version: 2.4
+Name: cpvx
+Version: 1.0.1
+Summary: 📊 cpvx - CLI Plugin Excel untuk pembelajaran berbasis file .cpvxclrc
+Author-email: openpineaplehub <openpineaple@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/pineplugins/cpvexcel
+Project-URL: Documentation, https://pineplugins.github.io/cpvexcel/
+Project-URL: Source, https://github.com/pineplugins/cpvexcel
+Project-URL: Issues, https://github.com/pineplugins/cpvexcel/issues
+Project-URL: Changelog, https://github.com/pineplugins/cpvexcel/releases
+Project-URL: Download, https://github.com/pineplugins/cpvexcel/archive/refs/heads/main.zip
+Keywords: excel,cli,cpvxxclrc,plugin,education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Education
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: rich
+Dynamic: license-file
+
 # cpvexcel Plugin CLI
 
 plugin that helps in `excel` learning documentation which is useful for copying values ​​and pasting them into spreadsheets

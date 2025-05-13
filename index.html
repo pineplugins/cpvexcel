@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cpvexcel</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Deskripsi singkat situs atau halaman ini.">
+  <meta name="keywords" content="docsify, dokumentasi, plugin, javascript, html">
+  <meta name="author" content="Nama Kamu atau Tim Kamu">
+  <link rel="icon" href="./resources/img/logo/cpvexcel_icon.svg" type="image/x-icon">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.11.4/themes/pure.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sxin0/docsify-termynal@main/termynal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sxin0/docsify-termynal@main/custom.css">
+  <style>
+  :root {
+    --docsifytabs-border-color: #ededed;
+    --docsifytabs-tab-highlight-color: purple;
+  }
+</style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'cpvexcel',
+      repo: 'https://github.com/pineplugins/cpvexcel',
+      homepage: '/README.md',
+      loadSidebar: false,
+      loadNavbar: true,
+      subMaxLevel: false,
+      auto2top: true,
+      loadFooter: true,
+      pagination: {
+        nextText: 'Next Page',
+        previousText: 'Previous Page',
+        crossChapterText: true,
+        crossChapter: true,
+      },
+      plugins: [
+        function (hook, vm) {
+          /*termynal.js*/
+          hook.beforeEach(function (content) {
+            return beforeEach(content);
+          })
+          hook.doneEach(function () {
+            setupTermynal();
+            showRandomAnnouncement('announce-left', 5000)
+            showRandomAnnouncement('announce-right', 10000)
+          });
+        }
+      ],
+      tabs: {
+        persist: true, 
+        sync: true, 
+        theme: 'classic', 
+        tabComments: true, 
+        tabHeadings: true 
+      }
+    }
+  </script>
+
+  <!-- JS -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <!-- Latest -->
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+  <script src="https://cdn.jsdelivr.net/gh/sxin0/docsify-termynal@main/termynal.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/sxin0/docsify-termynal@main/custom.js"></script>
+</body>
+
+</html>
